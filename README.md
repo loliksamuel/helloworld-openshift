@@ -14,5 +14,20 @@ blue green deployment:
 * u should see israel
 * note: it will not work from browser due to sticky sessions
 
+##### minishift addons install /Users/samuelcardonis/Documents/projects/openshift/minishift-addons/add-ons/grafana/
+##### minishift addon apply grafana --addon-env namespace=kube-system
 ##### oc new-app 
 ##### oc new-app -L
+##### oc get is -n openshift
+##### oc new-app helloworld~https://github.com/loliksamuel/helloworld-openshift.git
+##### oc status
+##### oc expose service sinatra (expose a route)
+##### oc start-build helloworld -n helloworld
+##### oc describe bc/helloworld -n helloworld
+##### oc tag dev/helloworld:latest test/helloworld (copy dev env to test env)
+##### oc get pod -n helloworld
+##### oc logs helloworld-6-krnq4 -f -n helloworld
+##### oc 
+##### oc 
+##### oc 
+##### oc login

@@ -4,7 +4,7 @@ In order to deploy the CoolStore microservices application, you need
 * brew cask install minishift 
 * procees with https://docs.okd.io/latest/minishift/getting-started/quickstart.html
 * oc cluster up
-
+* https://192.168.64.2:8443/console/catalog
 
 run Application
 ====================

@@ -13,3 +13,6 @@ blue green deployment:
 * curl http://helloworld-helloworld.192.168.64.2.nip.io/
 * u should see israel
 * note: it will not work from browser due to sticky sessions
+
+** oc new-app 
+** oc new-app -L

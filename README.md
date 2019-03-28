@@ -14,5 +14,5 @@ blue green deployment:
 * u should see israel
 * note: it will not work from browser due to sticky sessions
 
-### oc new-app 
-### oc new-app -L
+##### oc new-app 
+##### oc new-app -L

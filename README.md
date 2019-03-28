@@ -1,4 +1,12 @@
-Getting Started with OpenShift Sample Application
+Prerequisites
+================
+In order to deploy the CoolStore microservices application, you need 
+* brew cask install minishift 
+* procees with https://docs.okd.io/latest/minishift/getting-started/quickstart.html
+* oc cluster up
+
+
+run Application
 ====================
 
 This is a sample application for the book, Getting Started with OpenShift

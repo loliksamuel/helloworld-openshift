@@ -14,9 +14,10 @@ blue green deployment:
 * u should see israel
 * note: it will not work from browser due to sticky sessions
 
+### openshift cli tutorial : https://github.com/openshift/origin/blob/master/docs/cli.md
 ##### minishift addons install /Users/samuelcardonis/Documents/projects/openshift/minishift-addons/add-ons/grafana/
 ##### minishift addon apply grafana --addon-env namespace=kube-system
-##### oc new-app 
+##### oc new-app --display-name="Web Team Development" --description="Development project for the web team."
 ##### oc new-app -L
 ##### oc get is -n openshift
 ##### oc new-app helloworld~https://github.com/loliksamuel/helloworld-openshift.git
@@ -29,5 +30,5 @@ blue green deployment:
 ##### oc logs helloworld-6-krnq4 -f -n helloworld
 ##### oc 
 ##### oc 
-##### oc 
+##### oc whoami
 ##### oc login

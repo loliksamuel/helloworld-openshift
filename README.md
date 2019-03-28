@@ -11,10 +11,10 @@ run Application
 * openshift cli tutorial : https://github.com/openshift/origin/blob/master/docs/cli.md
 * minishift addons install /Users/samuelcardonis/Documents/projects/openshift/minishift-addons/add-ons/grafana/
 * minishift addon apply grafana --addon-env namespace=kube-system
-* oc new-app --name=helloworld wildfly~https://github.com/loliksamuel/openshift-helloworld.git --display-name="Web Team Development" --description="Development project for the web team."
+* oc new-app --name=helloworld wildfly~https://github.com/loliksamuel/paas-openshift-hello-world.git --display-name="Web Team Development" --description="Development project for the web team."
 * oc new-app -L
 * oc get is -n openshift
-* oc new-app helloworld~https://github.com/loliksamuel/helloworld-openshift.git
+* oc new-app helloworld~https://github.com/loliksamuel/paas-openshift-hello-world.git
 * oc status
 * oc expose service hellosvc (expose a route or a load ballancer)
 * oc start-build helloworld -n helloworld

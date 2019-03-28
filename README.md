@@ -16,7 +16,7 @@ run Application
 * oc get is -n openshift
 * oc new-app helloworld~https://github.com/loliksamuel/helloworld-openshift.git
 * oc status
-* oc expose service sinatra (expose a route)
+* oc expose service hellosvc (expose a route or a load ballancer)
 * oc start-build helloworld -n helloworld
 * oc describe bc/helloworld -n helloworld
 * oc tag dev/helloworld:latest test/helloworld (copy dev env to test env)
@@ -30,9 +30,11 @@ blue green deployment
 ========================
 * create another branch helloGermany
 * change html to germany
-* commit
+* git commit -m "My application changes"
+* git push origin master
 * create another app germany
 * create route
+* oc start-build helloworld -n helloworlds
 * curl http://helloworld-helloworld.192.168.64.2.nip.io/
 * u should see germany
 * curl http://helloworld-helloworld.192.168.64.2.nip.io/

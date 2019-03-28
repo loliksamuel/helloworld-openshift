@@ -8,24 +8,10 @@ In order to deploy the CoolStore microservices application, you need
 
 run Application
 ====================
-
-This is a sample application for the book, Getting Started with OpenShift
-blue green deployment:
-* create another branch helloGermany
-* change html to germany
-* commit
-* create another app germany
-* create route
-* curl http://helloworld-helloworld.192.168.64.2.nip.io/
-* u should see germany
-* curl http://helloworld-helloworld.192.168.64.2.nip.io/
-* u should see israel
-* note: it will not work from browser due to sticky sessions
-
-openshift cli tutorial : https://github.com/openshift/origin/blob/master/docs/cli.md
+* openshift cli tutorial : https://github.com/openshift/origin/blob/master/docs/cli.md
 * minishift addons install /Users/samuelcardonis/Documents/projects/openshift/minishift-addons/add-ons/grafana/
 * minishift addon apply grafana --addon-env namespace=kube-system
-* oc new-app --display-name="Web Team Development" --description="Development project for the web team."
+* oc new-app --name=helloworld wildfly~https://github.com/loliksamuel/openshift-helloworld.git --display-name="Web Team Development" --description="Development project for the web team."
 * oc new-app -L
 * oc get is -n openshift
 * oc new-app helloworld~https://github.com/loliksamuel/helloworld-openshift.git
@@ -38,4 +24,22 @@ openshift cli tutorial : https://github.com/openshift/origin/blob/master/docs/cl
 * oc logs helloworld-6-krnq4 -f -n helloworld
 * oc 
 * oc whoami
-* oc login
+* oc logout
+
+blue green deployment
+========================
+* create another branch helloGermany
+* change html to germany
+* commit
+* create another app germany
+* create route
+* curl http://helloworld-helloworld.192.168.64.2.nip.io/
+* u should see germany
+* curl http://helloworld-helloworld.192.168.64.2.nip.io/
+* u should see israel
+* note: it will not work from browser due to sticky sessions. only from cli
+
+Troubleshooting
+================
+* https://learn.openshift.com
+* u may want to add application server via catalog>java>WildFly>next>next

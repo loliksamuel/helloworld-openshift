@@ -44,4 +44,4 @@ blue green deployment
 Troubleshooting
 ================
 * https://learn.openshift.com
-* u may want to add application server via catalog>java>WildFly>next>next
+

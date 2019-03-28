@@ -16,19 +16,18 @@ blue green deployment:
 
 openshift cli tutorial : https://github.com/openshift/origin/blob/master/docs/cli.md
 * minishift addons install /Users/samuelcardonis/Documents/projects/openshift/minishift-addons/add-ons/grafana/
-##### minishift addon apply grafana --addon-env namespace=kube-system
-##### oc new-app --display-name="Web Team Development" --description="Development project for the web team."
-##### oc new-app -L
-##### oc get is -n openshift
-##### oc new-app helloworld~https://github.com/loliksamuel/helloworld-openshift.git
-##### oc status
-##### oc expose service sinatra (expose a route)
-##### oc start-build helloworld -n helloworld
-##### oc describe bc/helloworld -n helloworld
-##### oc tag dev/helloworld:latest test/helloworld (copy dev env to test env)
-##### oc get pod -n helloworld
-##### oc logs helloworld-6-krnq4 -f -n helloworld
-##### oc 
-##### oc 
-##### oc whoami
-##### oc login
+* minishift addon apply grafana --addon-env namespace=kube-system
+* oc new-app --display-name="Web Team Development" --description="Development project for the web team."
+* oc new-app -L
+* oc get is -n openshift
+* oc new-app helloworld~https://github.com/loliksamuel/helloworld-openshift.git
+* oc status
+* oc expose service sinatra (expose a route)
+* oc start-build helloworld -n helloworld
+* oc describe bc/helloworld -n helloworld
+* oc tag dev/helloworld:latest test/helloworld (copy dev env to test env)
+* oc get pod -n helloworld
+* oc logs helloworld-6-krnq4 -f -n helloworld
+* oc 
+* oc whoami
+* oc login
